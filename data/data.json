@@ -1,0 +1,59 @@
+{
+  "motivation": [
+    "La libertad financiera es el resultado de decisiones diarias consistentes.",
+    "Cada pequeño ahorro es un paso hacia tu independencia.",
+    "Los hábitos de hoy construyen la vida de mañana.",
+    "Tu futuro yo te agradecerá las decisiones que tomas hoy.",
+    "La disciplina es el puente entre metas y logros.",
+    "No se trata de cuánto ganas, sino de cuánto guardas e inviertes.",
+    "La riqueza se construye lentamente, pero con constancia.",
+    "Cada día sin deudas es un día más cerca de la libertad."
+  ],
+  "finance": {
+    "savings": 2450,
+    "goal": 10000,
+    "monthly_income": 1800,
+    "monthly_expenses": 1200,
+    "investments": 850
+  },
+  "habits": [
+    {
+      "id": 1,
+      "name": "Ejercicio matutino",
+      "completed": true,
+      "streak": 15
+    },
+    {
+      "id": 2,
+      "name": "Meditar 10 min",
+      "completed": true,
+      "streak": 22
+    },
+    {
+      "id": 3,
+      "name": "Leer 30 min",
+      "completed": false,
+      "streak": 8
+    },
+    {
+      "id": 4,
+      "name": "Revisar finanzas",
+      "completed": true,
+      "streak": 30
+    }
+  ],
+  "goals": [
+    {
+      "name": "Fondo de emergencia",
+      "target": 6000,
+      "current": 2450,
+      "deadline": "2026-06-30"
+    },
+    {
+      "name": "Curso online",
+      "target": 500,
+      "current": 320,
+      "deadline": "2026-03-31"
+    }
+  ]
+}
