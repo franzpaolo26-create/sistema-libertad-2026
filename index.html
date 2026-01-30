@@ -3,23 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sistema Libertad 2026 PRO</title>
+<title>Sistema Libertad 2026 PRO+</title>
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#111827">
 <link rel="apple-touch-icon" href="icon-192.png">
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
 <div class="container">
     <header>
-        <h1>🚀 Sistema Libertad 2026 PRO</h1>
+        <h1>🚀 Sistema Libertad 2026 PRO+</h1>
         <p class="subtitle">Tu camino hacia la libertad financiera</p>
     </header>
+
+    <!-- Modo oscuro/claro toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn" class="theme-btn">
+            <span id="theme-icon">🌙</span>
+        </button>
+    </div>
 
     <section class="motivation-section">
         <div id="quote" class="quote-card">
             <span class="quote-icon">💡</span>
             <p id="quote-text"></p>
+        </div>
+    </section>
+
+    <!-- Nueva sección de resumen rápido -->
+    <section class="quick-stats">
+        <h2>📊 Resumen Rápido</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">💰</div>
+                <div class="stat-info">
+                    <span class="stat-label">Ahorro Total</span>
+                    <span class="stat-value" id="quick-savings">0 €</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-info">
+                    <span class="stat-label">Progreso Global</span>
+                    <span class="stat-value" id="quick-progress">0%</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🔥</div>
+                <div class="stat-info">
+                    <span class="stat-label">Racha Más Larga</span>
+                    <span class="stat-value" id="quick-streak">0 días</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📈</div>
+                <div class="stat-info">
+                    <span class="stat-label">Ahorro Mensual</span>
+                    <span class="stat-value" id="quick-monthly">0 €</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de gráficos -->
+    <section class="charts-section">
+        <h2>📈 Análisis Visual</h2>
+        
+        <div class="charts-grid">
+            <!-- Gráfico de evolución de ahorros -->
+            <div class="chart-container">
+                <h3>💰 Evolución de Ahorros</h3>
+                <canvas id="savingsChart"></canvas>
+            </div>
+
+            <!-- Gráfico de distribución -->
+            <div class="chart-container">
+                <h3>📊 Distribución Financiera</h3>
+                <canvas id="distributionChart"></canvas>
+            </div>
+
+            <!-- Gráfico de objetivos -->
+            <div class="chart-container full-width">
+                <h3>🎯 Progreso de Objetivos</h3>
+                <canvas id="goalsChart"></canvas>
+            </div>
+
+            <!-- Gráfico de hábitos -->
+            <div class="chart-container full-width">
+                <h3>✅ Cumplimiento de Hábitos (Últimos 7 días)</h3>
+                <canvas id="habitsChart"></canvas>
+            </div>
         </div>
     </section>
 
@@ -38,14 +113,22 @@
         <div id="habits" class="habits-container"></div>
     </section>
 
+    <!-- Nueva sección de historial -->
+    <section class="history-section">
+        <h2>📜 Historial Reciente</h2>
+        <div id="history" class="history-container"></div>
+    </section>
+
     <section class="actions-section">
         <button id="add-savings" class="btn btn-primary">💰 Registrar Ahorro</button>
+        <button id="add-expense" class="btn btn-danger">💸 Registrar Gasto</button>
         <button id="toggle-habit" class="btn btn-secondary">✓ Completar Hábito</button>
+        <button id="export-data" class="btn btn-success">📥 Exportar Datos</button>
         <button id="refresh-data" class="btn btn-info">🔄 Actualizar</button>
     </section>
 
     <footer>
-        <p>Sistema Libertad 2026 | Versión PRO</p>
+        <p>Sistema Libertad 2026 PRO+ | Versión 2.0</p>
         <p class="footer-note">Última actualización: <span id="last-update"></span></p>
     </footer>
 </div>

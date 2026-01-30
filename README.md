@@ -1,47 +1,163 @@
-# 🚀 Sistema Libertad 2026 PRO
+# 🚀 Sistema Libertad 2026 PRO+ v2.0
 
-Una Progressive Web App (PWA) para ayudarte a alcanzar tu libertad financiera en 2026.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PWA](https://img.shields.io/badge/PWA-enabled-blue.svg)](https://developers.google.com/web/progressive-web-apps/)
+[![Chart.js](https://img.shields.io/badge/Chart.js-4.4.0-ff6384.svg)](https://www.chartjs.org/)
 
-## ✨ Características
+> Progressive Web App mejorada para gestión financiera personal con análisis visual, seguimiento de objetivos y desarrollo de hábitos productivos.
 
-- 📊 **Dashboard Financiero**: Visualiza tus ahorros, inversiones y progreso
-- 🎯 **Seguimiento de Objetivos**: Define y monitorea tus metas financieras
-- ✅ **Hábitos Diarios**: Mantén el seguimiento de tus hábitos productivos
-- 💡 **Motivación Diaria**: Frases inspiradoras para mantenerte enfocado
-- 📱 **PWA Offline**: Funciona sin conexión a internet
-- 🔔 **Notificaciones Push**: Recordatorios y actualizaciones
+## 🆕 Novedades Versión 2.0
 
-## 🚀 Instalación
+### ✨ Nuevas Características
 
-1. Abre el archivo `index.html` en tu navegador web
-2. En Chrome/Edge: Click en el icono de instalación en la barra de direcciones
-3. En móvil: Menú → "Añadir a pantalla de inicio"
+- **📊 Gráficos Interactivos** - Visualización de datos con Chart.js
+  - Evolución de ahorros en línea temporal
+  - Distribución financiera (doughnut chart)
+  - Progreso de objetivos (barras)
+  - Cumplimiento de hábitos semanal
 
-## 📦 Estructura del Proyecto
+- **🌓 Modo Claro/Oscuro** - Toggle entre temas con persistencia
 
+- **📜 Historial de Transacciones** - Registro completo de ingresos y gastos
+
+- **📥 Exportar Datos** - Descarga tu información en formato CSV
+
+- **📊 Dashboard de Resumen Rápido** - Métricas clave al instante
+
+- **💸 Registro de Gastos** - Además de ahorros, controla tus gastos
+
+---
+
+## 📸 Capturas de Pantalla
+
+### Dashboard Principal con Gráficos
+![Dashboard](./screenshots/dashboard-graphs.png)
+
+### Modo Claro
+![Light Mode](./screenshots/light-mode.png)
+
+### Vista Móvil
+![Mobile](./screenshots/mobile-view.png)
+
+---
+
+## ✨ Características Completas
+
+### 🏠 Panel Principal
+- **Resumen rápido** con métricas clave
+- **Dashboard financiero** con 4 tarjetas informativas
+- **Frases motivacionales** aleatorias
+
+### 📊 Análisis Visual
+- **Gráfico de evolución** - Seguimiento temporal de ahorros
+- **Gráfico de distribución** - Visualiza tu asignación financiera
+- **Gráfico de objetivos** - Progreso visual de tus metas
+- **Gráfico de hábitos** - Cumplimiento semanal
+
+### 🎯 Gestión de Objetivos
+- Barras de progreso dinámicas
+- Fechas límite
+- Cálculo automático de montos restantes
+- Actualización en tiempo real
+
+### ✅ Sistema de Hábitos
+- Seguimiento de rachas (streaks)
+- Marcado interactivo
+- Visualización semanal
+- Persistencia de datos
+
+### 💰 Control Financiero
+- Registro de ahorros
+- Registro de gastos
+- Historial de transacciones
+- Exportación de datos
+
+### 🎨 Interfaz
+- **Tema oscuro/claro** con toggle
+- **Responsive design** (mobile-first)
+- **Animaciones suaves**
+- **Notificaciones visuales**
+
+### 📱 PWA Features
+- Instalable como app nativa
+- Funciona 100% offline
+- Cache inteligente
+- Notificaciones push
+
+---
+
+## 🛠️ Tecnologías
+
+### Frontend
+- **HTML5** - Estructura semántica
+- **CSS3** - Variables CSS, Grid, Flexbox, Animations
+- **JavaScript (ES6+)** - Async/await, Modules, Arrow Functions
+- **Chart.js 4.4.0** - Librería de gráficos
+
+### PWA Stack
+- **Service Workers** - Cache offline, push notifications
+- **Web App Manifest** - Instalación como app nativa
+- **LocalStorage API** - Persistencia de datos
+- **Notifications API** - Alertas del sistema
+
+---
+
+## 📦 Instalación
+
+### Opción 1: Clonar repositorio
+
+```bash
+git clone https://github.com/TU_USUARIO/sistema-libertad-2026.git
+cd sistema-libertad-2026
+open index.html
 ```
-sistema-libertad-2026/
-├── index.html          # Página principal
-├── style.css          # Estilos de la aplicación
-├── app.js             # Lógica de la aplicación
-├── sw.js              # Service Worker (funcionalidad offline)
-├── manifest.json      # Configuración de la PWA
-├── data/
-│   └── data.json      # Datos de la aplicación
-└── README.md          # Este archivo
+
+### Opción 2: Servidor local
+
+```bash
+# Con Python
+python3 -m http.server 8000
+
+# Con Node.js
+npx serve
+
+# Acceder a: http://localhost:8000
 ```
 
-## 💾 Datos
+---
 
-Los datos se almacenan en dos lugares:
-1. **data/data.json**: Archivo principal con toda la información
-2. **localStorage**: Backup automático en el navegador
+## 🚀 Uso
 
-### Estructura de datos:
+### Cambiar entre Modo Claro/Oscuro
+- Click en el botón 🌙/☀️ en la esquina superior derecha
+- El tema se guarda automáticamente
+
+### Registrar Ahorro
+1. Click en **"💰 Registrar Ahorro"**
+2. Ingresa la cantidad
+3. Se actualiza dashboard, gráficos e historial
+
+### Registrar Gasto
+1. Click en **"💸 Registrar Gasto"**
+2. Ingresa cantidad y descripción
+3. Se resta de tus ahorros y se registra en historial
+
+### Completar Hábitos
+- **Método 1:** Click directo en la tarjeta del hábito
+- **Método 2:** Botón "✓ Completar Hábito"
+
+### Exportar Datos
+- Click en **"📥 Exportar Datos"**
+- Descarga archivo CSV con tu historial
+
+---
+
+## 📊 Personalización de Datos
+
+Edita `data/data.json`:
 
 ```json
 {
-  "motivation": ["Frases motivacionales"],
   "finance": {
     "savings": 2450,
     "goal": 10000,
@@ -52,142 +168,181 @@ Los datos se almacenan en dos lugares:
   "habits": [
     {
       "id": 1,
-      "name": "Ejercicio matutino",
-      "completed": true,
-      "streak": 15
+      "name": "Tu hábito",
+      "completed": false,
+      "streak": 0
     }
   ],
   "goals": [
     {
-      "name": "Fondo de emergencia",
-      "target": 6000,
-      "current": 2450,
-      "deadline": "2026-06-30"
+      "name": "Tu objetivo",
+      "target": 5000,
+      "current": 1000,
+      "deadline": "2026-12-31"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-01-30T10:00:00Z",
+      "type": "income",
+      "description": "Descripción",
+      "amount": 100
     }
   ]
 }
 ```
 
-## 🎮 Uso
+---
 
-### Registrar Ahorro
-1. Click en "💰 Registrar Ahorro"
-2. Ingresa la cantidad
-3. El dashboard se actualiza automáticamente
+## 🏗️ Arquitectura
 
-### Completar Hábitos
-- **Opción 1**: Click en "✓ Completar Hábito" y escribe el nombre
-- **Opción 2**: Click directamente en la tarjeta del hábito
-
-### Actualizar Datos
-- Click en "🔄 Actualizar" para recargar la información
-
-## 🛠️ Personalización
-
-### Cambiar Objetivos
-Edita el archivo `data/data.json` en la sección `goals`:
-
-```json
-"goals": [
-  {
-    "name": "Tu objetivo",
-    "target": 5000,
-    "current": 1000,
-    "deadline": "2026-12-31"
-  }
-]
 ```
-
-### Añadir Hábitos
-Edita el archivo `data/data.json` en la sección `habits`:
-
-```json
-"habits": [
-  {
-    "id": 5,
-    "name": "Nuevo hábito",
-    "completed": false,
-    "streak": 0
-  }
-]
+sistema-libertad-2026/
+├── index.html          # Página principal
+├── style.css           # Estilos (tema claro/oscuro)
+├── app.js              # Lógica + gráficos Chart.js
+├── sw.js               # Service Worker
+├── manifest.json       # Web App Manifest
+├── data/
+│   └── data.json       # Base de datos
+├── icon-192.png
+├── icon-512.png
+└── README.md
 ```
-
-### Modificar Frases Motivacionales
-Edita el array `motivation` en `data/data.json`:
-
-```json
-"motivation": [
-  "Tu frase motivacional aquí",
-  "Otra frase inspiradora"
-]
-```
-
-## 📱 Características PWA
-
-- ✅ Funciona offline después de la primera carga
-- ✅ Se puede instalar como app nativa
-- ✅ Notificaciones push
-- ✅ Actualización automática en background
-- ✅ Responsive design (móvil y escritorio)
-
-## 🔧 Tecnologías Utilizadas
-
-- HTML5
-- CSS3 (Gradientes, Flexbox, Grid)
-- JavaScript (ES6+)
-- Service Workers
-- Web Notifications API
-- LocalStorage API
-- Progressive Web App
-
-## 🎨 Personalizar Colores
-
-Los colores principales están definidos en `style.css`:
-
-```css
-/* Fondo principal */
-background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
-
-/* Color de acento */
-color: #3b82f6;
-
-/* Gradiente de éxito */
-background: linear-gradient(90deg, #3b82f6 0%, #10b981 100%);
-```
-
-## 📊 Consejos de Uso
-
-1. **Actualiza tus datos diariamente** para mantener el seguimiento preciso
-2. **Revisa tu progreso semanalmente** para ajustar tu estrategia
-3. **Completa tus hábitos diarios** para mantener las rachas
-4. **Establece objetivos realistas** y alcanzables
-5. **Celebra tus logros** cuando alcances tus metas
-
-## 🔐 Privacidad
-
-Todos los datos se almacenan localmente en tu dispositivo. No se envía información a ningún servidor externo.
-
-## 📈 Próximas Mejoras
-
-- [ ] Gráficos de progreso histórico
-- [ ] Exportar datos a CSV/Excel
-- [ ] Categorías de gastos
-- [ ] Calculadora de inversiones
-- [ ] Modo oscuro/claro
-- [ ] Múltiples idiomas
-- [ ] Integración con bancos (opcional)
-
-## 🤝 Contribuir
-
-¿Ideas para mejorar el Sistema Libertad 2026? ¡Todas las sugerencias son bienvenidas!
-
-## 📄 Licencia
-
-Proyecto personal - Uso libre
 
 ---
 
-**Versión**: 1.0.0  
-**Última actualización**: Enero 2026  
+## 📈 Gráficos
 
-¡Hacia tu libertad financiera! 🚀💰
+### Tipos de gráficos implementados:
+
+1. **Línea** - Evolución temporal de ahorros
+2. **Doughnut** - Distribución financiera
+3. **Barras** - Progreso de objetivos
+4. **Barras** - Cumplimiento de hábitos
+
+### Personalización de gráficos:
+
+Los gráficos se adaptan automáticamente al tema claro/oscuro.
+
+---
+
+## 🆚 Comparación de Versiones
+
+| Feature | v1.0 | v2.0 PRO+ |
+|---------|------|-----------|
+| Dashboard básico | ✅ | ✅ |
+| Objetivos | ✅ | ✅ |
+| Hábitos | ✅ | ✅ |
+| **Gráficos interactivos** | ❌ | ✅ |
+| **Modo claro/oscuro** | ❌ | ✅ |
+| **Historial** | ❌ | ✅ |
+| **Exportar datos** | ❌ | ✅ |
+| **Registro de gastos** | ❌ | ✅ |
+| **Resumen rápido** | ❌ | ✅ |
+
+---
+
+## 🗺️ Roadmap
+
+### ✅ Versión 2.0 (Actual)
+- [x] Gráficos interactivos con Chart.js
+- [x] Modo claro/oscuro
+- [x] Historial de transacciones
+- [x] Exportar a CSV
+- [x] Registro de gastos
+
+### 🔜 Versión 2.1 (Próxima)
+- [ ] Filtros de historial por fecha
+- [ ] Categorías de gastos personalizables
+- [ ] Múltiples monedas
+- [ ] Calculadora de interés compuesto
+- [ ] Comparador de inversiones
+
+### 🚀 Versión 3.0 (Futuro)
+- [ ] Backend con Node.js + MongoDB
+- [ ] Autenticación y multi-usuario
+- [ ] Sincronización en la nube
+- [ ] App móvil nativa (React Native)
+- [ ] Integración bancaria (open banking)
+
+---
+
+## 🎨 Temas
+
+### Tema Oscuro (Default)
+- Fondo: #111827
+- Cards: #1f2937
+- Texto: #f9fafb
+- Acento: #3b82f6
+
+### Tema Claro
+- Fondo: #f3f4f6
+- Cards: #ffffff
+- Texto: #111827
+- Acento: #3b82f6
+
+---
+
+## 🤝 Contribuir
+
+¿Quieres mejorar el proyecto? ¡Todas las contribuciones son bienvenidas!
+
+1. Fork el proyecto
+2. Crea tu rama (`git checkout -b feature/AmazingFeature`)
+3. Commit (`git commit -m 'Add: AmazingFeature'`)
+4. Push (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+---
+
+## 📝 Changelog
+
+### v2.0.0 (2026-01-30)
+- ✨ Añadidos gráficos interactivos con Chart.js
+- ✨ Implementado modo claro/oscuro
+- ✨ Agregado historial de transacciones
+- ✨ Función de exportar datos a CSV
+- ✨ Registro de gastos además de ahorros
+- ✨ Dashboard de resumen rápido
+- 🎨 Mejoras visuales generales
+- 🐛 Corrección de bugs menores
+
+### v1.0.0 (2026-01-28)
+- 🎉 Lanzamiento inicial
+- ✨ Dashboard financiero básico
+- ✨ Sistema de objetivos
+- ✨ Seguimiento de hábitos
+- ✨ PWA offline-first
+
+---
+
+## 📄 Licencia
+
+MIT License - Ver `LICENSE` para más información
+
+---
+
+## 👤 Contacto
+
+**Tu Nombre**
+
+- 📧 Email: tu.email@ejemplo.com
+- 💼 LinkedIn: [linkedin.com/in/tu-perfil](https://linkedin.com/in/tu-perfil)
+- 🐙 GitHub: [@tu-usuario](https://github.com/tu-usuario)
+
+Proyecto: [github.com/tu-usuario/sistema-libertad-2026](https://github.com/tu-usuario/sistema-libertad-2026)
+
+---
+
+## 🙏 Agradecimientos
+
+- [Chart.js](https://www.chartjs.org/) - Librería de gráficos
+- [Google Fonts](https://fonts.google.com) - Tipografías
+- Comunidad de desarrolladores web
+
+---
+
+**Hecho con ❤️, ☕ y 📊 para alcanzar la libertad financiera**
+
+⭐ Si te gusta el proyecto, dale una estrella en GitHub!

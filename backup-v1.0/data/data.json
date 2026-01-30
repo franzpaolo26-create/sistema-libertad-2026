@@ -1,4 +1,4 @@
-﻿{
+{
   "motivation": [
     "La libertad financiera es el resultado de decisiones diarias consistentes.",
     "Cada pequeño ahorro es un paso hacia tu independencia.",
@@ -54,20 +54,6 @@
       "target": 500,
       "current": 320,
       "deadline": "2026-03-31"
-    }
-  ],
-  "history": [
-    {
-      "date": "2026-01-30T10:00:00Z",
-      "type": "income",
-      "description": "Ahorro mensual enero",
-      "amount": 600
-    },
-    {
-      "date": "2026-01-28T15:30:00Z",
-      "type": "expense",
-      "description": "Compras supermercado",
-      "amount": 120
     }
   ]
 }
