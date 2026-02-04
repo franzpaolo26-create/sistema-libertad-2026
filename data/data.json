@@ -1,4 +1,4 @@
-﻿{
+{
   "motivation": [
     "La libertad financiera es el resultado de decisiones diarias consistentes.",
     "Cada pequeño ahorro es un paso hacia tu independencia.",
@@ -68,6 +68,36 @@
       "type": "expense",
       "description": "Compras supermercado",
       "amount": 120
+    },
+    {
+      "date": "2026-01-25T09:00:00Z",
+      "type": "income",
+      "description": "Freelance proyecto",
+      "amount": 350
+    },
+    {
+      "date": "2026-01-20T14:00:00Z",
+      "type": "expense",
+      "description": "Pago servicios",
+      "amount": 85
+    },
+    {
+      "date": "2026-01-15T11:00:00Z",
+      "type": "income",
+      "description": "Salario enero",
+      "amount": 1800
+    },
+    {
+      "date": "2026-01-10T16:00:00Z",
+      "type": "expense",
+      "description": "Gasolina",
+      "amount": 60
+    },
+    {
+      "date": "2026-01-05T13:00:00Z",
+      "type": "income",
+      "description": "Bono extra",
+      "amount": 200
     }
   ]
 }
